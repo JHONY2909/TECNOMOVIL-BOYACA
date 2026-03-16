@@ -35,7 +35,13 @@ $productos = $query->fetchAll(PDO::FETCH_ASSOC);
 <td><?= $producto["stock"] ?></td>
 
 <td>
+
+<a href="editar.php?id=<?= $producto["id"] ?>">Editar</a>
+
+|
+
 <a href="eliminar.php?id=<?= $producto["id"] ?>">Eliminar</a>
+
 </td>
 
 </tr>
